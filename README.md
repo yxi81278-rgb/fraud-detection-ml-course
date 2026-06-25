@@ -23,6 +23,7 @@ fraud_detection_project/
 ├── results_exp1/                   # Experiment results (news negatives)
 ├── results_exp2/                   # Experiment results (customer service, seed=123)
 ├── results_exp3/                   # Experiment results (news, adjusted attack params)
+├── screenshots/                    # Key experiment running screenshots
 └── README.md
 ```
 
@@ -62,15 +63,21 @@ python src/01_prepare_data.py
 python src/03_train.py --models all --epochs 30 --batch_size 32
 ```
 
+![Training Screenshot](screenshots/03_train.py.png)
+
 ### 3. Generate Attack Variants (Fraud-R1 strategies)
 ```bash
 python src/04_rewrite.py
 ```
 
+![Rewriting Screenshot](screenshots/04_rewrite.py.png)
+
 ### 4. Evaluate
 ```bash
 python src/05_evaluate.py
 ```
+
+![Evaluation Screenshot](screenshots/05_evaluate.py.png)
 
 Results appear in `results/tables/all_results.csv` and `results/figures/`.
 
@@ -86,4 +93,3 @@ Four experiments were conducted with different negative sample sources and confi
 | Exp 4 (results_exp3/) | THUCNews news, adjusted attack params | Identical pattern to Exp 1 — attack param changes did not alter behavior |
 
 All detailed metrics (Accuracy, Precision, Recall, F1) are available in `all_results.csv` files under each results directory.
-
