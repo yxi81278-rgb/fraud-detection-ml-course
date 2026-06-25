@@ -63,21 +63,21 @@ python src/01_prepare_data.py
 python src/03_train.py --models all --epochs 30 --batch_size 32
 ```
 
-![Training Screenshot](screenshots/03_train.py.png)
+![Training Screenshot](03_train.py.png)
 
 ### 3. Generate Attack Variants (Fraud-R1 strategies)
 ```bash
 python src/04_rewrite.py
 ```
 
-![Rewriting Screenshot](screenshots/04_rewrite.py.png)
+![Rewriting Screenshot](04_rewrite.py.png)
 
 ### 4. Evaluate
 ```bash
 python src/05_evaluate.py
 ```
 
-![Evaluation Screenshot](screenshots/05_evaluate.py.png)
+![Evaluation Screenshot](05_evaluate.py.png)
 
 Results appear in `results/tables/all_results.csv` and `results/figures/`.
 
