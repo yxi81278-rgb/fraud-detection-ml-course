@@ -29,7 +29,6 @@ fraud_detection_project/
 
 | Model | Architecture | Paper | Year |
 |-------|-------------|-------|------|
-| Mamba | Selective State Space Model (S6) | Gu & Dao | 2024 |
 | xLSTM | Extended LSTM (Matrix + Scalar) | Beck & Hochreiter | NeurIPS 2024 |
 | Transformer | Lightweight encoder from scratch | Vaswani et al. | 2017/2024 |
 | XGBoost | TF-IDF + Gradient Boosting | Chen & Guestrin | 2016 |
